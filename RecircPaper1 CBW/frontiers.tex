@@ -1,0 +1,111 @@
+\documentclass[utf8]{frontiersinFPHY_FAMS}
+\setcitestyle{square}
+\usepackage{url,hyperref,lineno,microtype,subcaption}
+\usepackage[onehalfspacing]{setspace}
+\linenumbers
+\def\keyFont{\fontsize{8}{11}\helveticabold }
+\def\firstAuthorLast{FirstAuthorLastName {et~al.}}
+\def\Authors{First Author\,$^{1,*}$, Second\,$^{2}$ and Remaining\,$^{3}$}
+\def\Address{$^{1}$Place Holder \\
+$^{2}$Place Holder\\
+$^{3}$Place Holder}
+\def\corrAuthor{}
+
+\def\corrEmail{}
+
+%\newcommand{\note{}}[1][0]{\color{red}{} \color{black}}
+%\newcommand{\Re}[1][0]{$R_{E}$}
+%\newcommand{\BATS}[1][0]{Block-Adaptive-Tree-Solar-Roe-Up-Wind-Scheme }
+%\newcommand{\bats}[2][0]{BATS-R-US }
+%\newcommand{\DGCPM}[3][0]{Dynamic Global Core Plasma Model }
+%\newcommand{\dgcpm}[4][0]{DGCPM }
+%\newcommand{\SWMF}[5][0]{Space Weather Modeling Framework }
+
+
+\begin{document}
+\onecolumn
+\firstpage{1}
+
+\title[This is where a title like thing goes]{This is were the main title goes} 
+
+\author[\firstAuthorLast ]{\Authors} %This field will be automatically populated
+\address{} %This field will be automatically populated
+\correspondance{} %This field will be automatically populated
+
+\extraAuth{}
+
+\maketitle
+
+\begin{abstract}
+
+%%% Leave the Abstract empty if your article does not require one, please see the Summary Table for full details.
+%The abstract should be succinct, while rendering the general significance and conceptual advance of the work clearly to a broad readership. Don't cite References in Abstract. 
+\section{}
+
+Put the abstract here. %Rewrite that sentience.
+
+\tiny
+ \keyFont{ \section{Keywords:} At, least, 5, keys, words, 8, at, maximum} %All article types: you may provide up to 8 keywords; at least 5 are mandatory.
+\end{abstract}
+
+\section{Introduction}
+
+%Keep it succicent. No subheadings!
+
+\section{Methodology}
+
+\section{Analysis}
+
+\section{Discussion}
+
+\section{Conclusion}
+
+\section{Future Work}
+
+\section{Acknowledgments}
+
+\section{Funding}
+
+
+
+\section{Abbreviations}
+%avoid use of non-standard abbreviations. Do not abbreviations unless used at least four times. Non-standard abbreviations must be defined on first use. 
+\begin{itemize}
+	\item 
+	\item
+	\item 
+	\item 
+	\item 
+\end{itemize}
+
+\bibliography{RecircPaper}
+\bibliographystyle{Frontiers-Vancouver}
+
+\end{document}
+
+% This bibliography style file is intended for texts in ENGLISH
+ % This is an author-year citation style bibliography. As such, it is
+ % non-standard LaTeX, and requires a special package file to function properly.
+ % Such a package is    natbib.sty   by Patrick W. Daly
+ % The form of the \bibitem entries is
+ %   \bibitem[Jones et al.(1990)]{key}...
+ %   \bibitem[Jones et al.(1990)Jones, Baker, and Smith]{key}...
+ % The essential feature is that the label (the part in brackets) consists
+ % of the author names, as they should appear in the citation, with the year
+ % in parentheses following. There must be no space before the opening
+ % parenthesis!
+ % With natbib v5.3, a full list of authors may also follow the year.
+ % In natbib.sty, it is possible to define the type of enclosures that is
+ % really wanted (brackets or parentheses), but in either case, there must
+ % be parentheses in the label.
+ % The \cite command functions as follows:
+ %   \citet{key} ==>>                Jones et al. (1990)
+ %   \citet*{key} ==>>               Jones, Baker, and Smith (1990)
+ %   \citep{key} ==>>                (Jones et al., 1990)
+ %   \citep*{key} ==>>               (Jones, Baker, and Smith, 1990)
+ %   \citep[chap. 2]{key} ==>>       (Jones et al., 1990, chap. 2)
+ %   \citep[e.g.][]{key} ==>>        (e.g. Jones et al., 1990)
+ %   \citep[e.g.][p. 32]{key} ==>>   (e.g. Jones et al., 1990, p. 32)
+ %   \citeauthor{key} ==>>           Jones et al.
+ %   \citeauthor*{key} ==>>          Jones, Baker, and Smith
+ %   \citeyear{key} ==>>             1990
